@@ -5,21 +5,21 @@
 class Unimd2pdf < Formula
   desc "Universal Markdown to PDF converter"
   homepage "https://github.com/bianbbc87/unimd2pdf"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bianbbc87/unimd2pdf/releases/download/v0.1.2/unimd2pdf_0.1.2_darwin_amd64.tar.gz"
-      sha256 "9cf03f9fa931250f9f386ff40fba9d12f42953ea29f61f611b5e2212a20659bb"
+      url "https://github.com/bianbbc87/unimd2pdf/releases/download/v0.1.3/unimd2pdf_0.1.3_darwin_amd64.tar.gz"
+      sha256 "9e3c0e0edeac44ecea1cdf1422d9d18c6c1bd5e453024df553a81083d17505ef"
 
       define_method(:install) do
         bin.install "unimd2pdf"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bianbbc87/unimd2pdf/releases/download/v0.1.2/unimd2pdf_0.1.2_darwin_arm64.tar.gz"
-      sha256 "8ce863139e24169ee1326bcf548cbefeeae5773c3595a859519e5660592111d4"
+      url "https://github.com/bianbbc87/unimd2pdf/releases/download/v0.1.3/unimd2pdf_0.1.3_darwin_arm64.tar.gz"
+      sha256 "1fa3de76ec11d583ebc65db4e3586573208b04fad24cbe37b027d107cf1ecdd1"
 
       define_method(:install) do
         bin.install "unimd2pdf"
@@ -29,15 +29,15 @@ class Unimd2pdf < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bianbbc87/unimd2pdf/releases/download/v0.1.2/unimd2pdf_0.1.2_linux_amd64.tar.gz"
-      sha256 "ba027d7b339da23da6ffaf938327f5651596568cd8609caec114f639e2ebe255"
+      url "https://github.com/bianbbc87/unimd2pdf/releases/download/v0.1.3/unimd2pdf_0.1.3_linux_amd64.tar.gz"
+      sha256 "bdca0078525675092d4a55095efe2570bd876aa36674c31817e0f4dc84794a11"
       define_method(:install) do
         bin.install "unimd2pdf"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bianbbc87/unimd2pdf/releases/download/v0.1.2/unimd2pdf_0.1.2_linux_arm64.tar.gz"
-      sha256 "a88efb5ff2ecc7acac116fe72e557ec5b39571773769aa1aa3a68c9e09cdd9d0"
+      url "https://github.com/bianbbc87/unimd2pdf/releases/download/v0.1.3/unimd2pdf_0.1.3_linux_arm64.tar.gz"
+      sha256 "6a558fcd5f8a500e915be8d1bcd8107a2d8c0b4f64054ceee22425cb4bcefdef"
       define_method(:install) do
         bin.install "unimd2pdf"
       end
